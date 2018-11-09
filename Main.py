@@ -1,9 +1,8 @@
-"""Case-study #2
+"""Case-study #2 Прогрессивное налогообложение
 Developers:
 Sychov A. (), Virt A. (), Ostanina K. ()
 
 """
-#Well...
-
-#TODOS:
-#TODO: Analysis
+#TODO: Inputs      - Virt
+#TODO: Mathimatics - Ostanina
+#TODO: Local       - Sychev
