@@ -1,1 +1,5 @@
-#Fill dat power
+RU_INPUT_UR_FAMILY_CATEGORY    = "Укажите ваш семейный статус:"
+RU_ONLY_ONE                    = "(1) Один субъект"
+RU_PARENTS                     = "(2) Семейная пара"
+RU_SINGLE_PARENT               = "(3) Родитель-одиночка"
+RU_INPUT_UR_MONTHLY_IN_DOLLARS = "Укажите ваш ежемесячный доход (в долларах):"
