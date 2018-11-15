@@ -6,9 +6,9 @@ Sychov A. (), Virt A. (), Ostanina K. ()
 import local
 
 print(local.RU_INPUT_UR_FAMILY_CATEGORY)
-print(local.RU_ONLY_ONE)
-print(local.RU_PARENTS)
-print(local.RU_SINGLE_PARENT)
+print("(1) " + local.RU_ONLY_ONE)
+print("(2) " + local.RU_PARENTS)
+print("(3) " + local.RU_SINGLE_PARENT)
 status = int(input())
 
 print(local.RU_INPUT_UR_MONTHLY_IN_DOLLARS)
