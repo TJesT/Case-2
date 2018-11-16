@@ -32,49 +32,34 @@ for month in NAME_OF_MONTHS:
     salary = float(input())
     annual_salary += salary
     
-if status == 1:
-    if 0 < annual_salary <= 9075:
-        tax = 0.1*annual_salary
-    elif annual_salary <= 36900:
-        tax = 907.5 + (annual_salary-9075)*0.15
-    elif annual_salary <= 89350:
-        tax = 5081.25 + (annual_salary-36900)*0.25
-    elif annual_salary <= 186350:
-        tax = 18193.75 + (annual_salary-89350)*0.28
-    elif annual_salary <= 405100:
-        tax = 45353.75 + (annual_salary-186350)*0.33
-    elif annual_salary <= 406750:
-        tax = 117541.25 + (annual_salary-405100)*0.35
-    elif annual_salary > 406750:
-        tax = 118118.75 + (annual_salary-406750)*0.396
-elif status == 2:
-      if 0 < annual_salary <= 18150:
-        tax = annual_salary*0.1
-    elif annual_salary <= 73800:
-        tax = 1815 + (annual_salary-18150)*0.15
-    elif annual_salary <= 148850:
-        tax = 10162.5 + (annual_salary-73800)*0.25
-    elif annual_salary <= 226850:
-        tax = 28925 + (annual_salary-148850)*0.28
-    elif annual_salary <= 405100 :
-        tax = 50765 + (annual_salary-226850)*0.33
-    elif annual_salary <= 457600:
-        tax = 109587.5 + (annual_salary-405100)*0.35
-    elif annual_salary > 457600:
-        tax = 127962.5 + (annual_salary-457600)*0.396
-elif status == 3:
-    if 0 < annual_salary <= 12950:
-        tax = annual_salary*0.1
-    elif annual_salary <= 49400:
-        tax = 1295 + (annual_salary-12950)*0.15
-    elif annual_salary <= 127550:
-        tax = 6762.5 + (annual_salary-49400)*0.25
-    elif annual_salary <= 206600:
-        tax = 26300.25 + (annual_salary-127550)*0.28
-    elif annual_salary <= 405100:
-        tax = 48434.25 + (annual_salary-206600)*0.33
-    elif annual_salary <= 432200:
-        tax = 113939.25 + (annual_salary-405100)*0.35
-    elif annual_salary > 432200:
-        tax = 123424.25 + (annual_salary-432200)*0.396
-print(tax)
+first = [406750, 405100, 186350, 89350, 36900, 9075, 0]
+second = [457600, 405100, 226850, 148850, 73800, 18150, 0]
+third = [432200, 405100, 206600, 127550, 49400, 12950, 0]
+tax = [0.396, 0.35, 0.33, 0.28, 0.25, 0.15, 0.1]
+def scr():
+    for point in range(7):
+        if status == 1:
+            if annual_salary >= first[point]:
+                finaltax = (annual_salary - first[point]) * tax[point]
+                while first[point] != 0:
+                    point1 = point + 1
+                    finaltax = finaltax + (first[point] - first[point1]) * tax[point1]
+                    point += 1
+                return round(finaltax, 2)
+        elif status == 2:
+            if annual_salary >= second[point]:
+                finaltax = (annual_salary - second[point]) * tax[point]
+                while second[point] != 0:
+                    point1 = point + 1
+                    finaltax = finaltax + (second[point] - second[point1]) * tax[point1]
+                    point += 1
+                return round(finaltax, 2)
+        elif status == 3:
+            if annual_salary >= third[point]:
+                finaltax = (annual_salary - third[point])*tax[point]
+                while third[point] != 0:
+                    point1 = point+1
+                    finaltax = finaltax + (third[point] - third[point1])*tax[point1]
+                    point += 1
+                return round(finaltax, 2)
+print(scr())
