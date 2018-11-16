@@ -48,3 +48,18 @@ if status == 1:
     elif annual_salary > 406750:
         tax = 118118.75 + (annual_salary-406750)*0.396
 elif status == 2:
+      if 0 < annual_salary <= 18150:
+        tax = annual_salary*0.1
+    elif annual_salary <= 73800:
+        tax = 1815 + (annual_salary-18150)*0.15
+    elif annual_salary <= 148850:
+        tax = 10162.5 + (annual_salary-9075)*0.25
+    elif annual_salary <= 226850:
+        tax = 28925 + (annual_salary-9075)*0.28
+    elif annual_salary <= 405100 :
+        tax = 50765 + (annual_salary-9075)*0.33
+    elif annual_salary <= 457600:
+        tax = 109587.5 + (annual_salary-9075)*0.35
+    elif annual_salary > 457600:
+        tax = 127962.5 + (annual_salary-9075)*0.396
+elif status == 3:
