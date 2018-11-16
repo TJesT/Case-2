@@ -66,15 +66,15 @@ elif status == 3:
     if 0 < annual_salary <= 12950:
         tax = annual_salary*0.1
     elif annual_salary <= 49400:
-        tax = 1295 + (annual_salary-9075)*0.15
+        tax = 1295 + (annual_salary-12950)*0.15
     elif annual_salary <= 127550:
-        tax = 6762.5 + (annual_salary-9075)*0.25
+        tax = 6762.5 + (annual_salary-49400)*0.25
     elif annual_salary <= 206600:
-        tax = 26300.25 + (annual_salary-9075)*0.28
+        tax = 26300.25 + (annual_salary-127550)*0.28
     elif annual_salary <= 405100:
-        tax = 48434.25 + (annual_salary-9075)*0.33
+        tax = 48434.25 + (annual_salary-206600)*0.33
     elif annual_salary <= 432200:
-        tax = 113939.25 + (annual_salary-9075)*0.35
+        tax = 113939.25 + (annual_salary-405100)*0.35
     elif annual_salary > 432200:
-        tax = 123424.25 + (annual_salary-9075)*0.396
+        tax = 123424.25 + (annual_salary-432200)*0.396
 print(tax)
