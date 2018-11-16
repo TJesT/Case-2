@@ -1,18 +1,12 @@
-RU_INPUT_UR_FAMILY_CATEGORY    = "Укажите ваш семейный статус:"
-RU_ONLY_ONE                    = "Один субъект"
-RU_PARENTS                     = "Семейная пара"
-RU_SINGLE_PARENT               = "Родитель-одиночка"
-RU_INPUT_UR_TAX                = "Ваша зарплата за"
-RU_IN_DOLLARS                  = "(в долларах)"
-RU_MONTH_JANUARY               = "Январь"
-RU_MONTH_FEBRUARY              = "Февраль"
-RU_MONTH_MARCH                 = "Март"
-RU_MONTH_APRIL                 = "Апрель"
-RU_MONTH_MAY                   = "Май"
-RU_MONTH_JUNE                  = "Июнь"
-RU_MONTH_JULY                  = "Июль"
-RU_MONTH_AUGUST                = "Август"
-RU_MONTH_SEPTEMBER             = "Сентябрь" 
-RU_MONTH_OCTOBER               = "Октябрь"
-RU_MONTH_NOVEMBER              = "Ноябрь" 
-RU_MONTH_DECEMBER              = "Декабрь"
+RU_INPUT_UR_FAMILY_CATEGORY = "Укажите ваш семейный статус:"
+RU_ONLY_ONE = "Один субъект"
+RU_PARENTS = "Семейная пара"
+RU_SINGLE_PARENT = "Родитель-одиночка"
+RU_INPUT_UR_TAX = "Ваша зарплата за"
+RU_IN_DOLLARS = "(в долларах)"
+RU_NAME_OF_MONTHS = [
+  "Январь", "Февраль", "Март",
+  "Апрель", "Май", "Июнь",
+  "Июль", "Август", "Сентябрь",
+  "Октябрь", "Ноябрь", "Декабрь"
+]
