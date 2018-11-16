@@ -3,22 +3,32 @@ Developers:
 Sychov A., Virt A., Ostanina K.
 
 """
-import local
+import Local
 
-print(local.RU_INPUT_UR_FAMILY_CATEGORY)
-print("(1) " + local.RU_ONLY_ONE)
-print("(2) " + local.RU_PARENTS)
-print("(3) " + local.RU_SINGLE_PARENT)
+NAME_OF_MONTHS = [
+  Local.RU_MONTH_JANUARY,
+  Local.RU_MONTH_FEBRUARY,
+  Local.RU_MONTH_MARCH,
+  Local.RU_MONTH_APRIL,
+  Local.RU_MONTH_MAY,
+  Local.RU_MONTH_JUNE,
+  Local.RU_MONTH_JULY,
+  Local.RU_MONTH_AUGUST,
+  Local.RU_MONTH_SEPTEMBER,
+  Local.RU_MONTH_OCTOBER,
+  Local.RU_MONTH_NOVEMBER,
+  Local.RU_MONTH_DECEMBER
+]
+
+print(Local.RU_INPUT_UR_FAMILY_CATEGORY)
+print("(1) " + Local.RU_ONLY_ONE)
+print("(2) " + Local.RU_PARENTS)
+print("(3) " + Local.RU_SINGLE_PARENT)
 status = int(input())
 
-"""print(local.RU_INPUT_UR_MONTHLY_IN_DOLLARS)
-salary = int(input()) * 12
-"""
-names_months = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october',
-                'november', 'december']
 annual_salary = 0
-for month in range(12):
-    print("Ваша зарплата в", names_months[month], "(В долларах):")
+for month in NAME_OF_MONTHS:
+    print(Local.RU_INPUT_UR_TAX, month, Local.RU_IN_DOLLARS)
     salary = float(input())
     annual_salary += salary
     
