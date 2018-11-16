@@ -6,19 +6,19 @@ Sychov A., Virt A., Ostanina K.
 import Local
 
 NAME_OF_MONTHS = [
-  Local.RU_MONTH_JANUARY,
-  Local.RU_MONTH_FEBRUARY,
-  Local.RU_MONTH_MARCH,
-  Local.RU_MONTH_APRIL,
-  Local.RU_MONTH_MAY,
-  Local.RU_MONTH_JUNE,
-  Local.RU_MONTH_JULY,
-  Local.RU_MONTH_AUGUST,
-  Local.RU_MONTH_SEPTEMBER,
-  Local.RU_MONTH_OCTOBER,
-  Local.RU_MONTH_NOVEMBER,
-  Local.RU_MONTH_DECEMBER
-]
+    Local.RU_MONTH_JANUARY,
+    Local.RU_MONTH_FEBRUARY,
+    Local.RU_MONTH_MARCH,
+    Local.RU_MONTH_APRIL,
+    Local.RU_MONTH_MAY,
+    Local.RU_MONTH_JUNE,
+    Local.RU_MONTH_JULY,
+    Local.RU_MONTH_AUGUST,
+    Local.RU_MONTH_SEPTEMBER,
+    Local.RU_MONTH_OCTOBER,
+    Local.RU_MONTH_NOVEMBER,
+    Local.RU_MONTH_DECEMBER
+] 
 
 print(Local.RU_INPUT_UR_FAMILY_CATEGORY)
 print("(1) " + Local.RU_ONLY_ONE)
