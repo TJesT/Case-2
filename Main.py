@@ -1,6 +1,6 @@
 """Case-study #2 Прогрессивное налогообложение
 Developers:
-Sychov A. (), Virt A. (), Ostanina K. ()
+Sychov A., Virt A., Ostanina K.
 
 """
 import local
