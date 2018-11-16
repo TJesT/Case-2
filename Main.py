@@ -52,4 +52,4 @@ def scr():
                 return round(finaltax, 2)
       
     
-print(scr())
+print(Local.RU_TOTALS, scr())
